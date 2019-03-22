@@ -1,0 +1,1 @@
+docker build -t pduleba-tomcat:latest .
