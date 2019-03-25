@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    build:
+      context: .
+      dockerfile: db/Dockerfile
+      network:
+        -web-app-network
+  web:
+    build:
+      context: .
+      dockerfile: web/Dockerfile
+      network:
+        -web-app-network
+networks:
+  web-app-network
+    driver: bridge
