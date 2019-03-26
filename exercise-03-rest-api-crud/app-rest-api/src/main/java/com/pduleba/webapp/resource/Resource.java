@@ -28,6 +28,7 @@ public class Resource {
                 .login("test")
                 .password("password")
                 .score(0)
+                .level("Unknown")
                 .email("test@emial.com")
                 .build());
 

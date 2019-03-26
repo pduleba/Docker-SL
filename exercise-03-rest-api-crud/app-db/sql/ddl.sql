@@ -1,9 +1,8 @@
 CREATE TABLE IF NOT EXISTS players (
-  id       INT AUTO_INCREMENT NOT NULL,
+  id       INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   login    VARCHAR(25),
   password VARCHAR(25),
-  rank     VARCHAR(15),
+  level    VARCHAR(15),
   score    INT,
-  email    VARCHAR(50),
-  primary key (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  email    VARCHAR(50)
+) ENGINE=InnoDB;

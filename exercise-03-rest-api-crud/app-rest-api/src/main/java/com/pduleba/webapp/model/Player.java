@@ -20,6 +20,7 @@ public class Player {
     private Integer id;
     private String login;
     private String password;
+    private String level;
     private Integer score;
     private String email;
 

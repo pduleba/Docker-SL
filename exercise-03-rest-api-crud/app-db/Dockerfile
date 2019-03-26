@@ -1,4 +1,4 @@
-FROM mysql:5.6
+FROM mysql:8
 
 ENV MYSQL_DATABASE app-database
 
