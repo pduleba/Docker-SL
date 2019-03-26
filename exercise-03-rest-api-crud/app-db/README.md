@@ -1,7 +1,7 @@
 # Getting Started
 
 ### How to use it
-* `exec-build.bat` - duild Docker image 
+* `exec-build.bat` - build Docker image 
 * `exec-run-network.bat` - create network `if` does not exist
 * `exec-run.bat` - run container in shared network
 * `exec-connect.bat` - connect to running container
