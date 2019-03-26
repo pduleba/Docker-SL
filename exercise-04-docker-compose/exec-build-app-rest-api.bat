@@ -1,0 +1,1 @@
+docker build -t pduleba/app-rest-api:latest ./../exercise-03-rest-api-crud/app-rest-api
