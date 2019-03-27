@@ -1,0 +1,38 @@
+# https://docs.docker.com/compose/compose-file/
+version: '3'
+
+services:
+
+  app-db:
+    container_name: app-mysql
+    image: app-mysql
+    build:
+      context: ./../exercise-03-rest-api-crud/app-db
+      dockerfile: Dockerfile
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    networks:
+      - app-network
+    labels:
+      kompose.image-pull-policy: "IfNotPresent"
+
+  app-rest-api:
+    container_name: app-rest-api
+    image: app-rest-api
+    depends_on:
+      - app-db
+    build:
+      context: ./../exercise-03-rest-api-crud/app-rest-api
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    networks:
+      - app-network
+    labels:
+      kompose.image-pull-policy: "IfNotPresent"
+
+networks:
+  app-network:
+    driver: bridge
