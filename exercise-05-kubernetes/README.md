@@ -22,6 +22,7 @@ Kubernetes -> Nodes -> Pods -> Containers
 * `exec-convert.bat` - convert `docker-compose.yml` into Kubernetes deployment
 * * **WARNING !!!** `kompose convert` generates no `imagePullPolicy` which is #BUG imho (manual fix required)
 * `exec-deploy.bat` - apply `k8s` folder configuration into Kubernetes 
+* `kubectl get pods` - check if both pods are in `Running` state
 * `exec-port-forward.bat POD_NAME` - enable port forwarding for `app-rest-api` pod
 * `exec-remove.bat` - delete deployment (`app-rest-api` and `app-db`)
 * [Documentation](http://kompose.io/)
@@ -34,6 +35,7 @@ Kubernetes -> Nodes -> Pods -> Containers
 * `docker-image-build.bat` - Build required images locally 
 * `kubectl run app-db --image=app-mysql:latest --image-pull-policy=Never --env="MYSQL_ROOT_PASSWORD=password"` - Run MySQL
 * `kubectl run app-rest-api --image=app-rest-api:latest --image-pull-policy=Never` - Run Spring Boot app
+* `kubectl get pods` - check if both pods are in `Running` state
 * `kubectl port-forward POD_NAME 8888:8888` - Enable port forward for pod `POD_NAME`
 * `kubectl delete deployment app-db app-rest-api` - Delete deployment
 * `docker-image-build.bat` - Clean up
