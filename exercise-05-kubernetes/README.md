@@ -5,7 +5,7 @@ This is demonstrating usage of Docker Compose on Kubernetes.
 Based on `docker-compose.yml` from exercise 4.
 
 ### K8s basic structure overview
-Kubernetes -> Nodes -> Pods -> Containers
+Kubernetes -> Nodes -> Pods -> Services -> Containers
 
 ### Basic commands
 * `kubectl get all`- see status of all elements on k8s
