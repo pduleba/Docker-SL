@@ -22,8 +22,8 @@ spec:
       - env:
         - name: MYSQL_ROOT_PASSWORD
           value: password
-        image: app-mysql
-        name: app-mysql
+        image: app-db
+        name: app-db
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3306

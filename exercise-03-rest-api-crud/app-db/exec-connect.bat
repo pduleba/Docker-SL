@@ -1,1 +1,1 @@
-docker exec -it app-mysql bash
+docker exec -it app-db bash

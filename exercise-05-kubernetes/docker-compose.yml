@@ -4,8 +4,8 @@ version: '3'
 services:
 
   app-db:
-    container_name: app-mysql
-    image: app-mysql
+    container_name: app-db
+    image: app-db
     build:
       context: ./../exercise-03-rest-api-crud/app-db
       dockerfile: Dockerfile

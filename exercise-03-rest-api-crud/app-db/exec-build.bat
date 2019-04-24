@@ -1,1 +1,1 @@
-docker build -t app-mysql:latest .
+docker build -t app-db:latest .

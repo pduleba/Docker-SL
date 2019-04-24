@@ -33,7 +33,7 @@ Kubernetes -> Nodes -> Pods -> Services -> Containers
 
 ### Extras - how to do it manually
 * `docker-image-build.bat` - Build required images locally 
-* `kubectl run app-db --image=app-mysql:latest --image-pull-policy=Never --env="MYSQL_ROOT_PASSWORD=password"` - Run MySQL
+* `kubectl run app-db --image=app-db:latest --image-pull-policy=Never --env="MYSQL_ROOT_PASSWORD=password"` - Run MySQL
 * `kubectl run app-rest-api --image=app-rest-api:latest --image-pull-policy=Never` - Run Spring Boot app
 * `kubectl get pods` - check if both pods are in `Running` state
 * `kubectl port-forward POD_NAME 8888:8888` - Enable port forward for pod `POD_NAME`
